@@ -14,9 +14,11 @@ public class IntroJavaCourse implements CourseName, CourseNumber, Credits, Prere
     private double credits;
     private String prerequisites;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
+    public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
+        this.credits = credits;
+        this.prerequisites = prerequisites;
     }
 
     public String getCourseNumber() {
